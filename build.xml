@@ -350,8 +350,9 @@
       value="${name}/[conf]/[artifact]-[revision](-[classifier]).[ext]"/>
 
   <!--test related properties -->
-  <property name="sqoop.test.oracle.connectstring"
-            value="jdbc:oracle:thin:@//localhost/xe"/>
+  <property name="sqoop.test.oracle.connectstring" value="jdbc:oracle:thin:@//localhost/xe"/>
+  <property name="sqoop.test.oracle.username" value="SQOOPTEST"/>
+  <property name="sqoop.test.oracle.password" value="12345"/>
 
   <property name="sqoop.test.mysql.connectstring.host_url"
             value="jdbc:mysql://localhost/"/>
@@ -380,11 +381,9 @@
   <property name="sqoop.test.sqlserver.connectstring.host_url"
             value="jdbc:sqlserver://sqlserverhost:1433"/>
 
-  <property name="java.security.krb5.realm"
-            value="OX.AC.UK"/>
+  <property name="sqoop.test.sqlserver.database"
+            value="sqooptest"/>
 
-  <property name="java.security.krb5.kdc"
-            value="kdc0.ox.ac.uk:kdc1.ox.ac.uk"/>
   <property name="ms.sqlserver.username"
             value="SQOOPUSER"/>
 
@@ -989,12 +988,6 @@
 
       <sysproperty key="sqoop.test.msserver.connector.factory"
                    value="${sqoop.test.msserver.connector.factory}"/>
-
-      <sysproperty key="java.security.krb5.realm"
-                   value="${java.security.krb5.realm}"/>
-
-      <sysproperty key="java.security.krb5.kdc"
-                   value="${java.security.krb5.kdc}"/>
 
       <sysproperty key="sqoop.test.db2.connectstring.host_url" value="${sqoop.test.db2.connectstring.host_url}" />
       <sysproperty key="sqoop.test.db2.connectstring.database" value="${sqoop.test.db2.connectstring.database}" />
