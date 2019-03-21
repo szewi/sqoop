@@ -205,7 +205,7 @@
   </if>
 
   <!-- Set dependency versions that are working with all Hadoop versions-->
-  <property name="hbase95.version" value="0.95.2-hadoop${hbasecompatprofile}-SNAPSHOT" />
+  <property name="hbase95.version" value="1.2.4" />
 
   <!-- Load system-wide and project-wide default properties set by
        the user, to avoid needing to override with -D. -->
@@ -287,8 +287,8 @@
   <property name="src.tar.file" location="${build.dir}/${src.artifact.name}.tar.gz" />
 
   <!-- compilation -->
-  <property name="targetJavaVersion" value="1.6" />
-  <property name="sourceJavaVersion" value="1.6" />
+  <property name="targetJavaVersion" value="1.7" />
+  <property name="sourceJavaVersion" value="1.7" />
   <property name="javac.deprecation" value="off"/>
   <property name="javac.debug" value="on"/>
   <property name="build.encoding" value="ISO-8859-1"/>
